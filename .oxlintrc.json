@@ -1,0 +1,25 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "categories": {
+    "correctness": "error"
+  },
+  "ignorePatterns": ["js/libs/**", "js/plugins.js"],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jquery": true
+  },
+  "globals": {
+    "chrome": "writable",
+    "hoverZoom": "writable",
+    "hoverZoomPlugins": "writable",
+    "options": "writable"
+  },
+  "rules": {
+    "no-cond-assign": "off",
+    "no-dupe-else-if": "off",
+    "no-eval": "off",
+    "no-unused-vars": "off",
+    "no-useless-escape": "off"
+  }
+}
